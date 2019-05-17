@@ -1,0 +1,33 @@
+.stepper {
+  position: fixed;
+  top: 320px;
+  margin-left: 30px;
+  z-index: 5;
+  li {
+    cursor: pointer;
+    button {
+      cursor: pointer;
+      outline: none;
+      border: none;
+      width: 8px;
+      height: 8px;
+      border: solid 1px #01d099;
+      top: 20%;
+      z-index: 1;
+      margin-left: 10px;
+      border-radius: 100%;
+      padding: 0;
+      background: transparent;
+    }
+    &.active {
+      button {
+        background-color: #01d099;
+      }
+    }
+  }
+}
+@media screen and (max-width: 758px) {
+  .stepper {
+    display: none;
+  }
+}

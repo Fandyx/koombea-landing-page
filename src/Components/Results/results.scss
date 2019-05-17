@@ -1,0 +1,241 @@
+.results {
+  background-color: #f9f9f9;
+  position: relative;
+  .info-container {
+    background-image: url('/assets/office_background.png');
+    position: relative;
+    padding-bottom: 20px;
+    background-attachment: fixed;
+    background-position: 0% 48%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #3b3b3b;
+      opacity: 0.46;
+      z-index: 0;
+    }
+    .left-side {
+      float: left;
+      position: relative;
+      z-index: 1;
+      padding-top: 295px;
+      width: 20%;
+      padding-bottom: 295px;
+      padding-left: 13%;
+      hr {
+        margin-left: 4px;
+      }
+      h3 {
+        font-family: CircularStd;
+        font-weight: normal;
+        font-size: 48px;
+        color: #ffffff;
+        letter-spacing: -0.34px;
+        line-height: 50px;
+        margin-top: 33px;
+        margin-left: 2px;
+        margin-bottom: 0;
+      }
+    }
+
+    .right-side {
+      display: inline-block;
+      margin-left: 20px;
+      max-width: 578px;
+      width: 45%;
+      min-height: 680px;
+      padding: 65px;
+      padding-right: 12.5%;
+      position: relative;
+      z-index: 1;
+      .top-container {
+        background-image: linear-gradient(150deg, #10e3ab 0%, #7884f2 100%);
+        width: 100%;
+        height: 340px;
+        overflow: hidden;
+        img {
+          width: 50%;
+          position: relative;
+          left: 25%;
+          top: 50px;
+        }
+      }
+      .bottom-container {
+        padding: 53px 71px 63px 49px;
+        background: white;
+        h3 {
+          margin: 0;
+          font-family: CircularStd;
+          font-size: 32px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1;
+          letter-spacing: -0.3px;
+          color: #002c2e;
+        }
+        hr {
+          width: 60px;
+          height: 4px;
+          background-color: #01d099;
+          margin-top: 20px;
+          margin-bottom: 16px;
+        }
+        p {
+          font-family: Lato-Regular;
+          font-size: 16px;
+          color: #444444;
+          letter-spacing: 0;
+          line-height: 34px;
+          margin-bottom: 30px;
+        }
+        a {
+          font-family: 'Lato', sans-serif;
+          font-weight: bold;
+          font-size: 16px;
+          color: #01d099;
+          letter-spacing: -0.22px;
+          line-height: 20px;
+          text-decoration: none;
+          img {
+            width: 23px;
+            height: 16px;
+            left: 13px;
+            position: relative;
+            top: 4px;
+          }
+        }
+      }
+    }
+  }
+  .chevron-down {
+    bottom: 32px;
+  }
+  .as-seen-on {
+    background-color: #f9f9f9;
+    clear: both;
+    padding: 40px 0 37px 0;
+    width: 68%;
+    margin: auto;
+
+    h4 {
+      text-transform: uppercase;
+      margin: 0;
+      font-family: Helvetica;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.14;
+      letter-spacing: 4px;
+      text-align: center;
+      color: #444444;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 34px;
+      margin-left: 3px;
+      flex-wrap: wrap;
+      .forbes-logo-container {
+        img {
+          width: 90px;
+        }
+      }
+      .nyt-logo-container {
+        img {
+          width: 168px;
+        }
+      }
+      .bi-logo-container {
+        img {
+          width: 60px;
+        }
+      }
+      .ss-logo-container {
+        img {
+          width: 128px;
+          position: relative;
+          bottom: 4px;
+        }
+      }
+      .women-logo-container {
+        img {
+          width: 128px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .results {
+    .info-container {
+      .left-side {
+        float: none;
+        position: absolute;
+        z-index: 2;
+        right: 46%;
+        bottom: 60%;
+        background: rgba(0, 0, 0, 0.5);
+        width: 250px;
+        padding: 0;
+        right: 37.2%;
+        bottom: 65%;
+        hr {
+          margin-left: 0;
+        }
+      }
+      .right-side {
+        margin: auto;
+        float: none;
+        width: 70%;
+        display: block;
+      }
+    }
+    .as-seen-on {
+      background-color: #f9f9f9;
+      clear: both;
+      padding: 40px 0 37px 0;
+      width: 68%;
+      margin: auto;
+      ul {
+        li {
+          margin: 0 20px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .results {
+    .info-container {
+      position: relative;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      .right-side {
+        width: 100%;
+        padding: 0;
+      }
+      .left-side {
+        position: absolute;
+        right: 60px;
+        bottom: 65%;
+      }
+    }
+    .as-seen-on {
+      li {
+        width: 100%;
+        margin: 15px auto;
+        text-align: center;
+      }
+    }
+  }
+}

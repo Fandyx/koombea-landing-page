@@ -1,0 +1,38 @@
+.btn {
+  width: 290px;
+  height: 59px;
+  border-radius: 100px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 20px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  &-green {
+    color: #ffffff;
+    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
+    background-color: #01d099;
+  }
+  &-white {
+    font-size: 18px;
+    color: #01d099;
+    border: solid 2px #01d099;
+    background: white;
+  }
+
+  img.btn-arrow {
+    width: 23.1px;
+    height: 15.9px;
+    position: relative;
+    top: 3px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .btn {
+    width: auto;
+  }
+}
